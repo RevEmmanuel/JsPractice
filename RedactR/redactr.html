@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./redactr.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to RedactR!</title>
+  </head>
+  <body>
+    <a class="first" href="./index.html">RedactR!</a>
+    <p class="intro3">Changed your mind?</p>
+    <p class="intro3">RedactR it!</p>
+
+    <p class="ask">Please enter your comment and unwanted words:</p>
+    <form id="my_form">
+      <input
+        class="comm"
+        type="text"
+        id="comment"
+        minlength="5"
+        maxlength="2000"
+        placeholder="Comment: "
+        required
+      />
+      <input
+        class="terrible"
+        type="text"
+        id="wordsToRedact"
+        minlength="3"
+        maxlength="100"
+        placeholder="Unwanted word: "
+        required
+      />
+      <button class="submit" type="submit">Submit</button>
+    </form>
+
+    <p id="result"></p>
+    <script src="./redactr.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: limegreen;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.redact_page {
+  background-color: brown;
+  color: black;
+  border: 1px solid white;
+  border-radius: 15px;
+  height: 100px;
+  width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  margin: 10px;
+  transition: all 0.4s ease;
+  font-size: 30px;
+}
+
+.redact_page:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border: 1px solid green;
+  color: black;
+  text-decoration: underline solid;
+}
+
+.redact {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
