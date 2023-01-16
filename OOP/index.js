@@ -23,24 +23,22 @@ class Account {
 }
 
 class BankAccount extends Account {
+  constructor(firstName, lastName, age, gender, balance, accountNumber) {
+    super(firstName, lastName, age, gender);
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.gender = gender;
+    this.balance = balance;
+    this.accountNumber = accountNumber;
+  }
 
-    constructor(firstName, lastName, age, gender, balance, accountNumber) {
-        super(firstName, lastName, age, gender);
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.gender = gender;
-        this.balance = balance;
-        this.accountNumber = accountNumber;
-    }
-
-    getBalance() {
-        return this.balance;
-    }
-    setBalance(balance) {
-        this.balance = balance;
-    }
-
+  getBalance() {
+    return this.balance;
+  }
+  setBalance(balance) {
+    this.balance = balance;
+  }
 }
 
 let myAccount = new BankAccount();
