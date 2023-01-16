@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
+    <link rel="stylesheet" href="./phonie.css" />
+  </head>
+  <body>
+    <header class="heading">
+      <marquee class="mark">Welcome to Phonie!</marquee>
+    </header>
+    <div class="main_div">
+      <div class="insider">
+        <div class="one_line">
+          <div class="one_half">
+            <p id="network"></p>
+            <img id="logo" src="" alt="-" />
+          </div>
+          <div class="two_half">
+            <p class="ask">Enter Phone Number:</p>
+            <input
+              class="comm"
+              type="text"
+              id="phoneNumber"
+              minlength="4"
+              maxlength="11"
+              placeholder="Phone number: "
+              required
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./phonie.js" defer></script>
+  </body>
+</html>

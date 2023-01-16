@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: limegreen;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  width: 100%;
+  height: 100px;
+  color: aqua;
+  background-color: brown;
+  font-size: 50px;
+  border: 3px dashed black;
+  padding-top: 40px;
+}
+
+.mark {
+  background-image: url("./logos/boitumelo-phetla-0lnx5Sc0_40-unsplash.jpg");
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+.main_div {
+  width: auto;
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+}
+
+.insider {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  background-color: chocolate;
+  border-radius: 20px;
+  padding: 20px;
+  margin-inline: auto;
+}
+
+.one_line {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: aqua;
+}
+
+.one_half {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  border-right: 1px solid black;
+  width: 70px;
+  margin-right: 10px;
+}
+
+#network {
+  margin-bottom: 10px;
+  height: 10px;
+  color: black;
+}
+
+#logo {
+  height: 45px;
+  width: 60px;
+}
+
+.two_half {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  margin-right: 10px;
+  padding-left: 12px;
+}
+
+.ask {
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 5px;
+}
