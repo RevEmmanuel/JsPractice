@@ -3,7 +3,12 @@ document.getElementById("my_form").onsubmit = myFunction;
 function redact(editingText, arrayOfUnwanted) {
   for (let word of arrayOfUnwanted) {
     if (editingText.includes(word))
-      editingText = editingText.replaceAll(word, "*".repeat(word.length));
+      editingText = editingText.replaceAll(
+        word,
+        word.charAt(0).toString() +
+          "*".repeat(word.length - 2) +
+          word.charAt(word.length - 1)
+      );
   }
   return editingText;
 }
