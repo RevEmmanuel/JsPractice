@@ -91,3 +91,31 @@ body {
   padding-top: 12px;
   padding-bottom: 5px;
 }
+
+#submit {
+  background-color: blue;
+  color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+  height: 45px;
+  width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  transform: scale(1.1);
+  background-color: white;
+  border: 3px solid green;
+  color: green;
+  text-decoration: underline solid;
+}
+
+#result {
+  font-size: 20px;
+  color: black;
+}

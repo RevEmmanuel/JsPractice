@@ -1,10 +1,15 @@
 document.getElementById("phoneNumber").oninput = myFunction;
+document.getElementById("submit").addEventListener("click", validateInput);
 
 function myFunction() {
   let phoneNumber = document.getElementById("phoneNumber").value;
-  if (phoneNumber.length < 4) {
+  if (phoneNumber.length < 4 || phoneNumber.startsWith("+2340")) {
     document.getElementById("logo").setAttribute("src", "");
     document.getElementById("network").textContent = "";
+    document.getElementById("result").textContent = "Invalid input";
+  }
+  if (phoneNumber.startsWith("+234")) {
+    phoneNumber = phoneNumber.replaceAll("+234", "0");
   }
   let network = checkPhoneNumber(phoneNumber);
   document.getElementById("network").textContent = network;
@@ -29,6 +34,23 @@ function myFunction() {
         .getElementById("logo")
         .setAttribute("src", "./logos/etisalat_logo.png");
       break;
+  }
+}
+
+function validateInput() {
+  let phoneNumber = document.getElementById("phoneNumber").value;
+  if (phoneNumber.startsWith("+234")) {
+    phoneNumber = phoneNumber.replaceAll("+234", "0");
+  }
+  if (phoneNumber.startsWith("+2340")) {
+    phoneNumber = phoneNumber.replaceAll("+2340", "0");
+  }
+  if (phoneNumber.length < 11) {
+    document.getElementById("logo").setAttribute("src", "");
+    document.getElementById("network").textContent = "";
+    document.getElementById("result").textContent = "Invalid input";
+  } else {
+    document.getElementById("result").innerHTML = checkPhoneNumber(phoneNumber);
   }
 }
 
